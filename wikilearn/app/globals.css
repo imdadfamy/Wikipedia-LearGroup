@@ -1,71 +1,173 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin:0;
-  font-family:Arial;
-  background:#e8dddd;
+  font-family: Arial, sans-serif;
+  background:#f5eded;
 }
 
-/* navbar */
-
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 40px;
-  background:#dedede;
-}
-
-.logo{
+.brand-wrapper{
   display:flex;
   align-items:center;
   gap:10px;
 }
 
-.logo img{
+.brand-logo{
   width:40px;
+  height:40px;
+  object-fit:contain;
 }
 
-.menu{
-  font-size:28px;
+.brand{
+  font-size:22px;
+  font-weight:bold;
+  margin:0;
+}
+/* navbar */
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#eaeaea;
+  padding:15px 30px;
+}
+
+.brand{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.icon-button{
+  font-size:24px;
+  border:none;
+  background:none;
   cursor:pointer;
 }
 
-/* search */
+/* barre recherche */
 
-.search-container{
+.search-section{
   display:flex;
   justify-content:center;
-  margin:40px;
+  margin:20px;
 }
 
-.search-bar{
-  width:400px;
-  padding:15px;
+.search-input{
+  width:350px;
+  padding:12px;
   border-radius:30px;
   border:1px solid black;
 }
 
-/* cards */
+/* cartes accueil */
 
-.courses{
+.home-cards{
   display:flex;
   justify-content:center;
   gap:40px;
+  margin-top:40px;
 }
 
-.card{
+.course-card{
+  display:block;
   width:220px;
-  height:260px;
+  height:250px;
   border-radius:15px;
-  padding:20px;
   text-align:center;
+  padding:20px;
   box-shadow:0 5px 10px rgba(0,0,0,0.2);
-  transition:0.3s;
+  text-decoration:none;
+  color:black;
 }
 
-.card img{
+.course-card__image{
+  width:130px;
+}
+
+.course-card--html{
+  background:orange;
+}
+
+.course-card--css{
+  background:#1e5eff;
+}
+
+.course-card--js{
+  background:#ffd800;
+}
+
+.course-card:hover{
+  transform:scale(1.05);
+}
+
+/* page cours */
+
+.course-hero{
+  margin:20px;
+}
+
+.course-pill{
+  background:#f1f1f1;
+  padding:10px 20px;
+  border-radius:20px;
   width:120px;
+  text-align:center;
+  font-weight:bold;
 }
 
-.card:hover{
-  transform:scale(1.08);
+.course-banner{
+  background:#f2d3bf;
+  padding:12px;
+  margin-top:10px;
+  text-align:center;
+}
+
+/* cartes leçons */
+
+.lesson-grid{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:30px;
+}
+
+.lesson-card{
+  width:220px;
+  border-radius:15px;
+  padding:15px;
+  text-align:center;
+}
+
+.lesson-card__image{
+  width:100%;
+  border-radius:10px;
+}
+
+.lesson-card__button{
+  margin-top:10px;
+  background:#333;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.lesson-card__button:hover{
+  background:black;
+}
+
+.html-card{
+  background:orange;
+}
+
+.css-card{
+  background:#1e5eff;
+}
+
+.js-card{
+  background:#ffd800;
 }

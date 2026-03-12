@@ -26,18 +26,21 @@ export default function HtmlPage() {
         <article className="lesson-card html-card">
           <img src="/html-lesson-1.png" className="lesson-card__image" />
           <p>Balises de premier niveau</p>
+           <span className="lesson-card__level">Débutant</span>
           <button className="lesson-card__button">Apprendre HTML</button>
         </article>
 
         <article className="lesson-card html-card">
           <img src="/html-lesson-2.png" className="lesson-card__image" />
-          <p>Formulaires</p>
+          <p>Les liens hypertexte</p>
+          <span className="lesson-card__level">Intermédiaire</span>
           <button className="lesson-card__button">Apprendre HTML</button>
         </article>
 
         <article className="lesson-card html-card">
           <img src="/html-lesson-3.png" className="lesson-card__image" />
-          <p>Attributs universels class et id</p>
+          <p>Attributs class et id</p>
+           <span className="lesson-card__level">Avancé</span>
           <button className="lesson-card__button">Apprendre HTML</button>
         </article>
 

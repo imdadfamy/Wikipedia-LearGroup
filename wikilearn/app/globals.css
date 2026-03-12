@@ -1,0 +1,71 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:#e8dddd;
+}
+
+/* navbar */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:#dedede;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img{
+  width:40px;
+}
+
+.menu{
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* search */
+
+.search-container{
+  display:flex;
+  justify-content:center;
+  margin:40px;
+}
+
+.search-bar{
+  width:400px;
+  padding:15px;
+  border-radius:30px;
+  border:1px solid black;
+}
+
+/* cards */
+
+.courses{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+
+.card{
+  width:220px;
+  height:260px;
+  border-radius:15px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 5px 10px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.card img{
+  width:120px;
+}
+
+.card:hover{
+  transform:scale(1.08);
+}

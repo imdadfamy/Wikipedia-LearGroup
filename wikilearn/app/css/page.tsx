@@ -1,11 +1,21 @@
+import Link from "next/link";
+
 export default function CssPage() {
   return (
     <main className="html-course-page">
-      
       <header className="topbar">
-        <button className="icon-button">☰</button>
-        <h1 className="brand">WIKILEARN</h1>
-        <button className="icon-button">⌕</button>
+        <button className="icon-button" aria-label="Menu">
+          ☰
+        </button>
+
+        <div className="brand-wrapper">
+          <img src="/wiki.png" alt="Logo Wikilearn" className="brand-logo" />
+          <h1 className="brand">WIKILEARN</h1>
+        </div>
+
+        <button className="icon-button" aria-label="Recherche">
+          ⌕
+        </button>
       </header>
 
       <section className="course-hero">
@@ -18,46 +28,56 @@ export default function CssPage() {
       </section>
 
       <section className="lesson-grid">
-
         <article className="lesson-card css-card">
-          <img src="/css1.png" className="lesson-card__image" />
-          
+          <img
+            src="/css1.png"
+            alt="Balises de premier niveau"
+            className="lesson-card__image"
+          />
+
           <div className="lesson-card__meta">
-            <p className="lesson-card__name">Sélecteurs CSS</p>
+            <p className="lesson-card__name">Introduction au css</p>
             <span className="lesson-card__level">Débutant</span>
           </div>
 
-          <button className="lesson-card__button">
+          <Link href="/css/debutant" className="lesson-card__button">
             Apprendre CSS
-          </button>
+          </Link>
         </article>
 
         <article className="lesson-card css-card">
-          <img src="/css2.png" className="lesson-card__image" />
-          
+          <img
+            src="/css2.png"
+            alt="Formulaires"
+            className="lesson-card__image"
+          />
+
           <div className="lesson-card__meta">
-            <p className="lesson-card__name">Flexbox</p>
+            <p className="lesson-card__name">Les couleurs en css</p>
             <span className="lesson-card__level">Intermédiaire</span>
           </div>
 
-          <button className="lesson-card__button">
+          <Link href="/css/intermediaire" className="lesson-card__button">
             Apprendre CSS
-          </button>
+          </Link>
         </article>
 
         <article className="lesson-card css-card">
-          <img src="/css3.png" className="lesson-card__image" />
-          
+          <img
+            src="/css3.png"
+            alt="Attributs universels class et id"
+            className="lesson-card__image"
+          />
+
           <div className="lesson-card__meta">
-            <p className="lesson-card__name">Animations CSS</p>
+            <p className="lesson-card__name">Les polices et taille</p>
             <span className="lesson-card__level">Avancé</span>
           </div>
 
-          <button className="lesson-card__button">
+          <Link href="/css/avance" className="lesson-card__button">
             Apprendre CSS
-          </button>
+          </Link>
         </article>
-
       </section>
     </main>
   );

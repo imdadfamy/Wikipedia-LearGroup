@@ -1,10 +1,16 @@
+import Link from "next/link";
+
 export default function JavascriptPage() {
   return (
     <main className="html-course-page">
-
       <header className="topbar">
         <button className="icon-button">☰</button>
-        <h1 className="brand">WIKILEARN</h1>
+
+        <div className="brand-wrapper">
+          <img src="/wiki.png" alt="logo" className="brand-logo"/>
+          <h1 className="brand">WIKILEARN</h1>
+        </div>
+
         <button className="icon-button">⌕</button>
       </header>
 
@@ -20,46 +26,47 @@ export default function JavascriptPage() {
       <section className="lesson-grid">
 
         <article className="lesson-card js-card">
-          <img src="/js1.png" className="lesson-card__image" />
+          <img src="/js1.png" className="lesson-card__image"/>
 
           <div className="lesson-card__meta">
-            <p className="lesson-card__name">Variables et types</p>
-            <span className="lesson-card__level">Débutant</span>
+            <p>Variables et bases</p>
+            <span>Débutant</span>
           </div>
 
-          <button className="lesson-card__button">
+          <Link href="/javascript/debutant" className="lesson-card__button">
             Apprendre
-          </button>
+          </Link>
         </article>
 
+
         <article className="lesson-card js-card">
-          <img src="/js2.png" className="lesson-card__image" />
+          <img src="/js2.png" className="lesson-card__image"/>
 
           <div className="lesson-card__meta">
-            <p className="lesson-card__name">Fonctions</p>
-            <span className="lesson-card__level">Intermédiaire</span>
+            <p>Fonctions</p>
+            <span>Intermédiaire</span>
           </div>
 
-          <button className="lesson-card__button">
+          <Link href="/javascript/intermediaire" className="lesson-card__button">
             Apprendre
-          </button>
+          </Link>
         </article>
 
+
         <article className="lesson-card js-card">
-          <img src="/js3.png" className="lesson-card__image" />
+          <img src="/js3.png" className="lesson-card__image"/>
 
           <div className="lesson-card__meta">
-            <p className="lesson-card__name">DOM et événements</p>
-            <span className="lesson-card__level">Avancé</span>
+            <p>Manipulation du DOM</p>
+            <span>Avancé</span>
           </div>
 
-          <button className="lesson-card__button">
+          <Link href="/javascript/avance" className="lesson-card__button">
             Apprendre
-          </button>
+          </Link>
         </article>
 
       </section>
-
     </main>
   );
 }

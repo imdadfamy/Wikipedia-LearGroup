@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5eded;
+}
+
+/* HEADER */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaeaea;
+  padding: 15px 30px;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.icon-button {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.topbar-spacer {
+  width: 24px;
+}
+
+/* HOME */
+
+.home-page {
+  min-height: 100vh;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-input {
+  width: 350px;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.home-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  display: block;
+  width: 220px;
+  min-height: 250px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card__image {
+  width: 130px;
+  height: auto;
+}
+
+.course-card__title {
+  margin-top: 20px;
+}
+
+.course-card--html {
+  background: orange;
+}
+
+.course-card--css {
+  background: #1e5eff;
+}
+
+.course-card--js {
+  background: #ffd800;
+}
+
+/* PAGE COURS */
+
+.html-course-page {
+  min-height: 100vh;
+}
+
+.course-hero {
+  margin: 20px;
+}
+
+.course-pill {
+  background: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.course-banner {
+  background: #f2d3bf;
+  padding: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* CARDS LEÇONS */
+
+.lesson-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.lesson-card {
+  width: 220px;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.lesson-card__image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.lesson-card__meta {
+  margin: 12px 0;
+}
+
+.lesson-card__name {
+  margin: 0 0 6px 0;
+  font-weight: bold;
+}
+
+.lesson-card__level {
+  font-size: 14px;
+}
+
+.lesson-card__button {
+  display: inline-block;
+  margin-top: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.lesson-card__button:hover {
+  background: black;
+}
+
+.html-card {
+  background: orange;
+}
+
+.css-card {
+  background: #1e5eff;
+}
+
+.js-card {
+  background: #ffd800;
+}
+
+/* PAGE START COURS */
+
+.lesson-start-page {
+  min-height: 100vh;
+  background: #f5eded;
+}
+
+.lesson-start-header {
+  width: 100%;
+  height: 60px;
+  background: #ececec;
+}
+
+.lesson-start-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 70px 20px;
+}
+
+.lesson-start-image {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 16px;
+  display: block;
+}
+
+.lesson-start-button {
+  min-width: 130px;
+  padding: 14px 34px;
+  border: none;
+  border-radius: 14px;
+  background: #2f49e6;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+} 
+
+.quiz-page {
+  min-height: 100vh;
+  background: #736f6f;
+}
+
+.quiz-topbar {
+  background: #efefef;
+  padding: 24px 36px;
+}
+
+.quiz-header {
+  background: #d9d9d9;
+  padding: 18px 22px;
+}
+
+.quiz-header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 22px;
+  background: #f0ddda;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar__fill {
+  height: 100%;
+  background: #d8744f;
+  transition: width 0.3s ease;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  padding: 70px 20px;
+}
+
+.question-box {
+  background: #0f58b8;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 10px;
+  max-width: 520px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.answers-list {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.answer-button {
+  width: 100%;
+  background: #f7efef;
+  border: 1px solid #222;
+  border-radius: 999px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.answer-button--selected {
+  outline: 3px solid #0f58b8;
+}
+
+.answer-circle {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.quiz-feedback {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.next-button {
+  background: #0f58b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 26px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.quiz-result {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.lesson-start-button {
+  display: inline-block;
+  min-width: 130px;
+  padding: 14px 34px;
+  border: none;
+  border-radius: 14px;
+  background: #2f49e6;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-align: center;
+}
+
+.timer-box {
+  margin-top: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #111;
+}

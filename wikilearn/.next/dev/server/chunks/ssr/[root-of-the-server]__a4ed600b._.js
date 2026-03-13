@@ -66,11 +66,38 @@ function Home() {
                         lineNumber: 11,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "icon-button",
-                        "aria-label": "Recherche",
-                        children: "⌕"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "auth-buttons",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/login",
+                                className: "auth-link",
+                                children: "Connexion"
+                            }, void 0, false, {
+                                fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
+                                lineNumber: 17,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/signup",
+                                className: "auth-link signup-link",
+                                children: "S'inscrire"
+                            }, void 0, false, {
+                                fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
+                                lineNumber: 21,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/profile",
+                                className: "auth-link",
+                                children: "Profil"
+                            }, void 0, false, {
+                                fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
                         lineNumber: 16,
                         columnNumber: 9
@@ -89,12 +116,12 @@ function Home() {
                     className: "search-input"
                 }, void 0, false, {
                     fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                    lineNumber: 22,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                lineNumber: 21,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -110,7 +137,7 @@ function Home() {
                                 className: "course-card__image"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                                lineNumber: 31,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -118,13 +145,13 @@ function Home() {
                                 children: "HTML"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                                lineNumber: 32,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                        lineNumber: 30,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -137,7 +164,7 @@ function Home() {
                                 className: "course-card__image"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                                lineNumber: 36,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -145,13 +172,13 @@ function Home() {
                                 children: "CSS"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                                lineNumber: 37,
+                                lineNumber: 47,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                        lineNumber: 35,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -164,7 +191,7 @@ function Home() {
                                 className: "course-card__image"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                                lineNumber: 41,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -172,19 +199,19 @@ function Home() {
                                 children: "JAVASCRIPT"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                                lineNumber: 42,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                        lineNumber: 40,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/page.tsx",
-                lineNumber: 29,
+                lineNumber: 39,
                 columnNumber: 7
             }, this)
         ]

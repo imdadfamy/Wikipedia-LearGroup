@@ -1,6 +1,33 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
+type User = {
+  firstname: string;
+  lastname: string;
+  username: string;
+  email: string;
+  password: string;
+};
 
 export default function Home() {
+  const [user, setUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    const savedUser = localStorage.getItem("wikilearnUser");
+
+    if (savedUser) {
+      setUser(JSON.parse(savedUser));
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("wikilearnUser");
+    localStorage.removeItem("wikilearnXP");
+    setUser(null);
+  };
+
   return (
     <main className="home-page">
       <header className="topbar">
@@ -13,9 +40,33 @@ export default function Home() {
           <h1 className="brand">WIKILEARN</h1>
         </div>
 
-        <button className="icon-button" aria-label="Recherche">
-          ⌕
-        </button>
+        <div className="auth-buttons">
+          {!user ? (
+            <>
+              <Link href="/login" className="auth-link">
+                Connexion
+              </Link>
+
+              <Link href="/signup" className="auth-link signup-link">
+                S&apos;inscrire
+              </Link>
+            </>
+          ) : (
+            <>
+              <span className="user-greeting">
+                Bonjour, {user.username}
+              </span>
+
+              <Link href="/profile" className="auth-link">
+                Profil
+              </Link>
+
+              <button onClick={handleLogout} className="logout-button">
+                Déconnexion
+              </button>
+            </>
+          )}
+        </div>
       </header>
 
       <section className="search-section">

@@ -1,6 +1,6 @@
 var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/app/page.js")
-R.c("server/chunks/ssr/b826f_next_dist_ebf9cb38._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__a4ed600b._.js")
+R.c("server/chunks/ssr/b826f_next_dist_fce45a63._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__99ae95bc._.js")
 R.c("server/chunks/ssr/b826f_c7e504fd._.js")
 R.c("server/chunks/ssr/[externals]__e8a2741f._.js")
 R.c("server/chunks/ssr/Documents_Wikipedia-LearGroup_wikilearn_app_4c9665ce._.js")

@@ -9,6 +9,9 @@
   "/javascript/intermediaire/page": "app/javascript/intermediaire/page.js",
   "/javascript/page": "app/javascript/page.js",
   "/lessons/[course]/[level]/page": "app/lessons/[course]/[level]/page.js",
+  "/login/page": "app/login/page.js",
   "/page": "app/page.js",
-  "/quiz/[course]/[level]/page": "app/quiz/[course]/[level]/page.js"
+  "/profile/page": "app/profile/page.js",
+  "/quiz/[course]/[level]/page": "app/quiz/[course]/[level]/page.js",
+  "/signup/page": "app/signup/page.js"
 }

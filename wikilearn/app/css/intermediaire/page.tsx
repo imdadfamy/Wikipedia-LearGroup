@@ -25,7 +25,7 @@ export default function CssIntermediairePage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/css/intermediaire" className="lesson-start-button">
+        <Link href="/lessons/css/intermediaire" className="lesson-start-button">
           Cours
         </Link>
       </section>

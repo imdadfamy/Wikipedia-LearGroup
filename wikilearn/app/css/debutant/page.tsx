@@ -25,7 +25,7 @@ export default function CssDebutantPage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/css/debutant" className="lesson-start-button">
+        <Link href="/lessons/css/debutant" className="lesson-start-button">
           Cours
         </Link>
       </section>

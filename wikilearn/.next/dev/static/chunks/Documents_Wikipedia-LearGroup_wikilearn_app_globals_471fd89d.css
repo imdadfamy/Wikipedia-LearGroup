@@ -370,4 +370,41 @@ body {
   font-weight: 700;
 }
 
+.lesson-page {
+  background: #f5eded;
+  min-height: 100vh;
+}
+
+.lesson-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.lesson-title {
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.lesson-text {
+  white-space: pre-wrap;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  box-shadow: 0 4px 12px #0000001f;
+}
+
+.lesson-button {
+  color: #fff;
+  background: #2f49e6;
+  border-radius: 10px;
+  margin-top: 28px;
+  padding: 14px 24px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
 /*# sourceMappingURL=Documents_Wikipedia-LearGroup_wikilearn_app_globals_471fd89d.css.map*/

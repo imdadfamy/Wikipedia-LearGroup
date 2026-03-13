@@ -22,7 +22,7 @@ export default function JavascriptDebutantPage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/javascript/debutant" className="lesson-start-button">
+        <Link href="/lessons/javascript/debutant" className="lesson-start-button">
           Cours
         </Link>
 

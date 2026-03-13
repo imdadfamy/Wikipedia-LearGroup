@@ -22,7 +22,7 @@ export default function JavascriptAvancePage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/javascript/avance" className="lesson-start-button">
+        <Link href="/lessons/javascript/avance" className="lesson-start-button">
           Cours
         </Link>
       </section>

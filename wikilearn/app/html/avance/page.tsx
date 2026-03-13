@@ -25,7 +25,7 @@ export default function HtmlAvancePage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/html/avance" className="lesson-start-button">
+        <Link href="/lessons/html/avance" className="lesson-start-button">
           Cours
         </Link>
       </section>

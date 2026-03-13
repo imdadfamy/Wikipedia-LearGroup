@@ -22,7 +22,7 @@ export default function JavascriptIntermediairePage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/javascript/intermediaire" className="lesson-start-button">
+        <Link href="/lessons/javascript/intermediaire" className="lesson-start-button">
           Cours
         </Link>
       </section>

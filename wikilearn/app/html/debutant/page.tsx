@@ -25,7 +25,7 @@ export default function HtmlDebutantPage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/html/debutant" className="lesson-start-button">
+        <Link href="/lessons/html/debutant" className="lesson-start-button">
           Cours
         </Link>
       </section>

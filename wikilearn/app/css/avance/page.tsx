@@ -25,7 +25,7 @@ export default function CssAvancePage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/css/avance" className="lesson-start-button">
+        <Link href="/lessons/css/avance" className="lesson-start-button">
           Cours
         </Link>
       </section>

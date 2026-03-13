@@ -25,7 +25,7 @@ export default function HtmlIntermediairePage() {
           className="lesson-start-image"
         />
 
-        <Link href="/quiz/html/intermediaire" className="lesson-start-button">
+        <Link href="/lessons/html/intermediaire" className="lesson-start-button">
           Cours
         </Link>
       </section>

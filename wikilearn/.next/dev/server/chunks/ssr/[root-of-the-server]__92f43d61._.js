@@ -21,6 +21,8 @@ __turbopack_context__.s([
     ()=>JavascriptIntermediairePage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/Wikipedia-LearGroup/wikilearn/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/Wikipedia-LearGroup/wikilearn/node_modules/next/dist/client/app-dir/link.react-server.js [app-rsc] (ecmascript)");
+;
 ;
 function JavascriptIntermediairePage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -34,7 +36,7 @@ function JavascriptIntermediairePage() {
                         children: "☰"
                     }, void 0, false, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                        lineNumber: 6,
+                        lineNumber: 8,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -45,7 +47,7 @@ function JavascriptIntermediairePage() {
                                 className: "brand-logo"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                                lineNumber: 9,
+                                lineNumber: 11,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -53,24 +55,24 @@ function JavascriptIntermediairePage() {
                                 children: "WIKILEARN"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 12,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                        lineNumber: 8,
+                        lineNumber: 10,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                        lineNumber: 13,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                lineNumber: 5,
+                lineNumber: 7,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -81,27 +83,28 @@ function JavascriptIntermediairePage() {
                         className: "lesson-start-image"
                     }, void 0, false, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                        lineNumber: 18,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$Wikipedia$2d$LearGroup$2f$wikilearn$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/lessons/javascript/intermediaire",
                         className: "lesson-start-button",
                         children: "Cours"
                     }, void 0, false, {
                         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                        lineNumber: 23,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-                lineNumber: 16,
+                lineNumber: 18,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Documents/Wikipedia-LearGroup/wikilearn/app/javascript/intermediaire/page.tsx",
-        lineNumber: 3,
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }

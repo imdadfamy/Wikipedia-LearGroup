@@ -1,12 +1,6 @@
 {
-  "/css/avance/page": "app/css/avance/page.js",
-  "/css/debutant/page": "app/css/debutant/page.js",
-  "/css/page": "app/css/page.js",
   "/html/debutant/page": "app/html/debutant/page.js",
-  "/html/intermediaire/page": "app/html/intermediaire/page.js",
   "/html/page": "app/html/page.js",
-  "/javascript/avance/page": "app/javascript/avance/page.js",
-  "/javascript/page": "app/javascript/page.js",
   "/page": "app/page.js",
   "/quiz/[course]/[level]/page": "app/quiz/[course]/[level]/page.js"
 }

@@ -242,3 +242,139 @@ body {
   cursor: pointer;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 } 
+
+.quiz-page {
+  min-height: 100vh;
+  background: #736f6f;
+}
+
+.quiz-topbar {
+  background: #efefef;
+  padding: 24px 36px;
+}
+
+.quiz-header {
+  background: #d9d9d9;
+  padding: 18px 22px;
+}
+
+.quiz-header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 22px;
+  background: #f0ddda;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar__fill {
+  height: 100%;
+  background: #d8744f;
+  transition: width 0.3s ease;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  padding: 70px 20px;
+}
+
+.question-box {
+  background: #0f58b8;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 10px;
+  max-width: 520px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.answers-list {
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.answer-button {
+  width: 100%;
+  background: #f7efef;
+  border: 1px solid #222;
+  border-radius: 999px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.answer-button--selected {
+  outline: 3px solid #0f58b8;
+}
+
+.answer-circle {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.quiz-feedback {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.next-button {
+  background: #0f58b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 26px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.quiz-result {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.lesson-start-button {
+  display: inline-block;
+  min-width: 130px;
+  padding: 14px 34px;
+  border: none;
+  border-radius: 14px;
+  background: #2f49e6;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-align: center;
+}
+
+.timer-box {
+  margin-top: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #111;
+}

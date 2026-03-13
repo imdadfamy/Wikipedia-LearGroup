@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HtmlAvancePage() {
   return (
     <main className="lesson-start-page">
@@ -23,7 +25,9 @@ export default function HtmlAvancePage() {
           className="lesson-start-image"
         />
 
-        <button className="lesson-start-button">Cours</button>
+        <Link href="/quiz/html/avance" className="lesson-start-button">
+          Cours
+        </Link>
       </section>
     </main>
   );

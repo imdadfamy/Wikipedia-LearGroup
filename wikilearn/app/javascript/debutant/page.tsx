@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function JavascriptDebutantPage() {
   return (
     <main className="lesson-start-page">
@@ -20,9 +22,9 @@ export default function JavascriptDebutantPage() {
           className="lesson-start-image"
         />
 
-        <button className="lesson-start-button">
+        <Link href="/quiz/javascript/debutant" className="lesson-start-button">
           Cours
-        </button>
+        </Link>
 
       </section>
 

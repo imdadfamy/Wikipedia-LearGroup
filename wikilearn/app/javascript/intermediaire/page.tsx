@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function JavascriptIntermediairePage() {
   return (
     <main className="lesson-start-page">
@@ -20,10 +22,9 @@ export default function JavascriptIntermediairePage() {
           className="lesson-start-image"
         />
 
-        <button className="lesson-start-button">
+        <Link href="/quiz/javascript/intermediaire" className="lesson-start-button">
           Cours
-        </button>
-
+        </Link>
       </section>
 
     </main>

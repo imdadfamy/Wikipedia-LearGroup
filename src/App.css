@@ -40,3 +40,5 @@
 .read-the-docs {
   color: #888;
 }
+.mw-editsection { display: none; } /* Cache les liens [modifier] */
+.wiki-content img { max-width: 100%; height: auto; } /* Ajuste les images */

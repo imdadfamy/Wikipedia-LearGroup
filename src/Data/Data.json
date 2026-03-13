@@ -1,0 +1,528 @@
+{
+  "formations": [
+    {
+      "id": "html",
+      "nom": "Apprendre le HTML",
+      "niveaux": [
+        {
+          "id": "html-debutant",
+          "nom": "Débutant",
+          "badge_nom": "Apprenti Architecte",
+          "points_bonus_fin": 100,
+          "modules": [
+            {
+              "id": "html-deb-mod1",
+              "titre": "Introduction au Web & Environnement",
+              "cours": "\n\n### 1. Qu'est-ce que le Web ?\n\nLe Web (World Wide Web) n'est pas Internet, mais un service qui fonctionne **sur** Internet. Il repose sur un modèle **Client-Serveur** :\n\n- **Le Client :** C'est votre navigateur (Chrome, Firefox, Safari). Il \"demande\" une page.\n- **Le Serveur :** C'est un ordinateur distant qui \"stocke\" les fichiers et les \"envoie\" au client.\n\n### 2. Le rôle du HTML\n\n**HTML** signifie *HyperText Markup Language* (Langage de Balisage Hypertexte).\n\n- Ce n'est **pas** un langage de programmation (il n'y a pas de logique mathématique complexe).\n- C'est un langage de **structure**. Il sert à dire au navigateur : \"Ceci est un titre\", \"Ceci est un paragraphe\", \"Ceci est une image\".\n\n### 3. Anatomie d'une balise\n\nLe HTML fonctionne avec des balises (tags) entourées de chevrons `< >`.\n\n- **Balise double :** `<p>Ceci est un paragraphe</p>`. On ouvre, on met le contenu, on ferme avec un slash `/`.\n- **Balise auto-fermante :** `<img src=\"image.jpg\">`. Elle n'a pas de contenu textuel propre, elle insère un élément.\n\n### 4. L'environnement de travail\n\nPour coder, il vous faut :\n\n1. **Un éditeur de texte :** Le standard actuel est **VS Code** (Visual Studio Code).\n2. **Un navigateur :** Pour tester votre rendu.\n3. **Une extension utile :** \"Live Server\" sur VS Code, qui permet de voir vos modifications en temps réel sans rafraîchir la page manuellement.\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Que signifie l'acronyme HTML ?",
+                "options": [
+                  "HyperText Main Language",
+                  "HyperText Markup Language",
+                  "High Tech Multi Language",
+                  "Hyper Tool Markup Links"
+                ],
+                "reponse_correcte": 1
+              }
+            },
+            {
+              "id": "html-deb-mod2",
+              "titre": "La structure minimale HTML5",
+              "cours": "\n\nPour qu'un navigateur comprenne qu'il lit du HTML5, chaque fichier doit commencer par une structure standard. Sans elle, le navigateur risque d'afficher la page avec des erreurs ou un rendu daté.\n\n### 1. Le Doctype : La déclaration d'intention\n\nLa toute première ligne est toujours : `<!DOCTYPE html>`.\n\n- Ce n'est pas une balise HTML à proprement parler.\n- C'est une instruction qui dit au navigateur : \"Attention, ce document est écrit en **HTML5**\".\n\n### 2. La racine : La balise `<html>`\n\nTout le code de votre page (sauf le doctype) doit être enfermé dans la balise `<html>`. On y ajoute souvent l'attribut `lang` pour indiquer la langue principale (ex: `lang=\"fr\"`).\n\n### 3. Le cerveau : La balise `<head>`\n\nCette section contient les informations **invisibles** pour l'utilisateur, mais cruciales pour le navigateur et les moteurs de recherche (Google) :\n\n- **L'encodage :** `<meta charset=\"UTF-8\">` (permet d'afficher les accents comme é, à, ç).\n- **Le titre de l'onglet :** `<title>Mon Super Site</title>`.\n- **Les liens :** Vers les fichiers CSS ou les icônes (favicon).\n\n### 4. Le corps : La balise `<body>`\n\nC'est ici que se trouve tout ce qui sera **visible** à l'écran : textes, images, vidéos, boutons. Si ce n'est pas dans le `<body>`, l'utilisateur ne le verra pas.\n\n### 5. Code complet de référence\n\nHTML\n\n`<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Ma première page</title>\n</head>\n<body>\n    <h1>Bienvenue sur mon site !</h1>\n    <p>Ceci est un paragraphe visible.</p>\n</body>\n</html>`\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Quelle section contient les éléments visibles sur la page web ?",
+                "options": [
+                  "<head>",
+                  "<html>",
+                  "<meta>",
+                  "<body>"
+                ],
+                "reponse_correcte": 3
+              }
+            },
+            {
+              "id": "html-deb-mod3",
+              "titre": "Les métadonnées et le <head>",
+              "cours": "\n\nLe `<head>` est un conteneur de métadonnées (données sur les données). Bien qu'invisible, il est le premier endroit que les robots de Google explorent.\n\n### 1. L'encodage des caractères : `charset`\n\n`<meta charset=\"UTF-8\">`\nLe Web est international. Sans cette balise, les caractères spéciaux comme les accents (é, à) ou les alphabets non-latins risquent de s'afficher comme des symboles étranges (ex: `Ã©`). **UTF-8** est le standard universel.\n\n### 2. Le Viewport : Essentiel pour le Mobile\n\n`<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`\nÀ l'époque, les sites s'affichaient en tout petit sur téléphone. Cette balise dit au navigateur : \"Adapte la largeur du site à la taille de l'écran de l'appareil\". Sans elle, ton site ne sera jamais \"Responsive\".\n\n### 3. La Description (SEO)\n\n`<meta name=\"description\" content=\"Apprenez le HTML gratuitement avec Famy.\">`\nC'est ce texte qui apparaît sous le titre de ton site dans les résultats de recherche Google. Une bonne description augmente le nombre de clics.\n\n### 4. Favicon et CSS\n\n- **Favicon :** C'est la petite icône dans l'onglet du navigateur (`<link rel=\"icon\" href=\"favicon.ico\">`).\n- **CSS :** C'est ici qu'on lie la feuille de style pour donner du design au site (`<link rel=\"stylesheet\" href=\"style.css\">`).\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Quelle balise permet d'éviter que les accents s'affichent mal ?",
+                "options": [
+                  "<meta charset='UTF-8'>",
+                  "<title>",
+                  "<viewport>",
+                  "<link>"
+                ],
+                "reponse_correcte": 0
+              }
+            },
+            {
+              "id": "html-deb-mod4",
+              "titre": "Titres (h1-h6) et Paragraphes",
+              "cours": "\n\nLa hiérarchie est la clé d'une page bien structurée. En HTML, on n'utilise pas les titres pour \"grossir le texte\", mais pour définir l'importance des sections.\n\n### 1. La hiérarchie des titres (`h1` à `h6`)\n\n- **`<h1>`** : C'est le titre principal de la page. Il ne doit y en avoir **qu'un seul** par page (généralement le titre de l'article ou du site).\n- **`<h2>`** : Les titres des grandes sections.\n- **`<h3>`** : Les sous-titres à l'intérieur des sections `<h2>`.\n- **`<h4>` à `<h6>`** : Pour des niveaux de détails encore plus profonds.\n\n> **Règle d'or :** Ne saute jamais de niveau (ne passe pas d'un `h1` à un `h3` directement).\n> \n\n### 2. Les paragraphes (`p`)\n\nLa balise `<p>` sert à contenir des blocs de texte. Par défaut, le navigateur ajoute un petit espace (marge) au-dessus et en dessous de chaque paragraphe pour les séparer.\n\n### 3. Les sauts de ligne (`br`)\n\nSi tu veux aller à la ligne à l'intérieur d'un même paragraphe sans créer un nouvel espace, on utilise la balise auto-fermante `<br>`.\n\n### 4. La ligne de séparation (`hr`)\n\nLa balise `<hr>` (Horizontal Rule) permet de tracer une ligne horizontale pour marquer un changement de thématique dans le contenu.\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Peut-on mettre un titre <h2> à l'intérieur d'une balise <p> ?",
+                "options": [
+                  "Oui",
+                  "Non",
+                  "Seulement en HTML5",
+                  "Seulement pour le SEO"
+                ],
+                "reponse_correcte": 1
+              }
+            },
+            {
+              "id": "html-deb-mod5",
+              "titre": "Formatage et Listes",
+              "cours": "\n\nLe HTML permet de donner du sens à ton texte. Il ne s'agit pas seulement de \"décoration\", mais d'indiquer au navigateur et aux lecteurs d'écran quels mots sont importants.\n\n### 1. L'importance vs le style\n\nIl existe deux façons de mettre du texte en gras ou en italique :\n\n- **Gras :**\n    - `<b>` : Pour mettre en gras sans importance particulière (juste esthétique).\n    - `<strong>` : Pour indiquer que le texte a une **forte importance** (mieux pour le SEO).\n- **Italique :**\n    - `<i>` : Pour un terme technique, une pensée ou un nom de navire (esthétique).\n    - `<em>` : Pour mettre l'**accent** sur un mot (emphase).\n\n### 2. Les Listes à puces (Non-ordonnées)\n\nOn utilise la balise `<ul>` (Unordered List) qui contient des éléments `<li>` (List Item).\n\n- *Rendu :* Des points noirs (puces).\n\nHTML\n\n`<ul>\n    <li>Pommes</li>\n    <li>Bananes</li>\n</ul>`\n\n### 3. Les Listes numérotées (Ordonnées)\n\nOn utilise la balise `<ol>` (Ordered List) avec des éléments `<li>`.\n\n- *Rendu :* 1, 2, 3...\n\nHTML\n\n`<ol>\n    <li>Étape 1 : Allumer le four</li>\n    <li>Étape 2 : Enfourner le plat</li>\n</ol>`\n\n### 4. Autres balises utiles\n\n- `<mark>` : Pour surligner du texte (comme avec un stabilo).\n- `<small>` : Pour les petits caractères (ex: mentions légales).\n- `<sub>` et `<sup>` : Pour les indices (ex: H<sub>2</sub>O) et les exposants (ex: 1<sup>er</sup>).\n\n---\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Quelle balise utilisez-vous pour une liste numérotée (1, 2, 3) ?",
+                "options": [
+                  "<ul>",
+                  "<li>",
+                  "<ol>",
+                  "<list>"
+                ],
+                "reponse_correcte": 2
+              }
+            },
+            {
+              "id": "html-deb-mod6",
+              "titre": "Les liens hypertextes (<a>)",
+              "cours": " \n\nLa balise `<a>` (pour *anchor* ou ancre) permet de créer un pont vers une autre page, un autre site, ou même un endroit précis de la même page.\n\n### 1. L'attribut indispensable : `href`\n\nUn lien sans adresse ne sert à rien. On utilise l'attribut `href` (*hypertext reference*) pour indiquer la destination.\n\nHTML\n\n`<a href=\"https://www.google.com\">Aller sur Google</a>`\n\n### 2. Liens Externes vs Internes\n\n- **Lien Absolu (Externe) :** On écrit l'URL complète. Utile pour pointer vers un autre site.\n    - Ex : `href=\"https://wikipedia.org\"`\n- **Lien Relatif (Interne) :** On pointe vers un fichier de son propre projet.\n    - Ex : `href=\"contact.html\"` (si le fichier est dans le même dossier).\n\n### 3. Ouvrir dans un nouvel onglet\n\nPar défaut, un lien remplace la page actuelle. Pour l'ouvrir dans un nouvel onglet, on ajoute `target=\"_blank\"`.\n\n> **Note de sécurité :** Il est recommandé d'ajouter `rel=\"noopener noreferrer\"` quand on utilise `target=\"_blank\"`.\n> \n\n### 4. Les Ancres (Liens internes à une page)\n\nOn peut créer un lien qui \"saute\" vers une section précise de la page en utilisant l'ID d'une balise.\n\n1. On donne un ID à un titre : `<h2 id=\"section1\">Titre</h2>`\n2. On crée le lien : `<a href=\"#section1\">Aller au titre</a>`\n\n### 5. Liens spéciaux\n\n- **Email :** `<a href=\"mailto:contact@exemple.com\">Envoyez-moi un mail</a>`\n- **Téléphone :** `<a href=\"tel:+33123456789\">Appelez-nous</a>`\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Comment ouvrir un lien dans un nouvel onglet ?",
+                "options": [
+                  "href='_blank'",
+                  "target='new'",
+                  "target='_blank'",
+                  "rel='external'"
+                ],
+                "reponse_correcte": 2
+              }
+            },
+            {
+              "id": "html-deb-mod7",
+              "titre": "Insertion d'images (<img>)",
+              "cours": "\n\nLa balise `<img>` est une balise **auto-fermante**. Contrairement aux textes, elle ne contient pas d'informations entre deux balises ; elle appelle un fichier externe pour l'afficher sur la page.\n\n### 1. L'attribut `src` (Source)\n\nC'est le chemin vers ton image.\n\n- **Chemin relatif :** `src=\"images/photo.jpg\"` (l'image est dans ton dossier projet).\n- **URL absolue :** `src=\"https://site.com/logo.png\"` (l'image vient d'Internet).\n\n### 2. L'attribut `alt` (Texte alternatif) - CRUCIAL\n\nC'est l'attribut le plus important pour deux raisons :\n\n- **Accessibilité :** Les malvoyants utilisent des lecteurs d'écran qui lisent ce texte à haute voix.\n- **Erreur de chargement :** Si l'image ne s'affiche pas, le texte `alt` apparaît à la place.\n- **SEO :** Google utilise ce texte pour comprendre ce qu'il y a sur l'image.\n\n### 3. Dimensions : `width` et `height`\n\nTu peux définir la largeur et la hauteur directement en HTML (en pixels).\n\nHTML\n\n`<img src=\"chat.jpg\" alt=\"Un petit chat qui dort\" width=\"300\" height=\"200\">`\n\n*Conseil :* Il est préférable aujourd'hui de gérer la taille en CSS, mais spécifier les dimensions en HTML aide le navigateur à réserver l'espace avant le chargement.\n\n### 4. Formats d'images courants\n\n- **JPG/JPEG :** Idéal pour les photos (poids réduit).\n- **PNG :** Idéal pour les logos (supporte la transparence).\n- **SVG :** Idéal pour les icônes (qualité infinie, ne pixélise pas).\n- **WebP :** Le nouveau standard (très léger, recommandé par Google).\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Quel attribut est lu par les lecteurs d'écran pour décrire une image ?",
+                "options": [
+                  "src",
+                  "title",
+                  "alt",
+                  "width"
+                ],
+                "reponse_correcte": 2
+              }
+            },
+            {
+              "id": "html-deb-mod8",
+              "titre": "Attributs globaux (id, class)",
+              "cours": "\n\nLes attributs globaux sont des caractéristiques que l'on peut ajouter à **presque toutes** les balises HTML. Ils servent à identifier, classer ou traduire les éléments.\n\n### 1. L'attribut `id` (Identifiant unique)\n\nL'attribut `id` est comme un numéro de sécurité sociale : il doit être **unique** dans toute la page.\n\n- **Usage :** Cibler un élément précis (pour une ancre ou un style spécifique).\n- **Exemple :** `<header id=\"haut-de-page\">`\n\n### 2. L'attribut `class` (La catégorie)\n\nContrairement à l'ID, une classe peut être utilisée sur **plusieurs éléments**. C'est comme un \"uniforme\" que plusieurs balises peuvent porter.\n\n- **Usage :** Appliquer le même style ou comportement à plusieurs éléments.\n- **Exemple :** `<p class=\"texte-important\">` et `<h2 class=\"texte-important\">`\n\n### 3. L'attribut `lang`\n\nOn l'a vu sur la balise `<html>`, mais on peut aussi l'utiliser localement si un paragraphe change de langue. Cela aide les lecteurs d'écran à adopter le bon accent.\n\n- **Exemple :** `<p lang=\"en\">This is English.</p>`\n\n### 4. L'attribut `title` (L'infobulle)\n\nIl affiche un petit texte quand on laisse la souris sur l'élément. C'est un bonus pour l'expérience utilisateur.\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Peut-on utiliser le même ID pour deux balises sur la même page ?",
+                "options": [
+                  "Oui",
+                  "Non",
+                  "Seulement pour les images",
+                  "Seulement en CSS"
+                ],
+                "reponse_correcte": 1
+              }
+            },
+            {
+              "id": "html-deb-mod9",
+              "titre": "Projet Final : Ton CV",
+              "cours": "\n\nL'objectif est de regrouper toutes les connaissances acquises (titres, listes, liens, images, structure) pour créer une page web fonctionnelle.\n\n### 1. Consignes du projet\n\nTon fichier `index.html` doit impérativement contenir :\n\n- La **structure minimale** complète (`DOCTYPE`, `head`, `body`).\n- Un **titre principal** (`h1`) avec ton nom.\n- Une **image de profil** avec un attribut `alt` correct.\n- Une section **Coordonnées** avec des liens vers ton email (`mailto`) et ton téléphone (`tel`).\n- Une section **Expériences** utilisant une liste ordonnée (`ol`) ou non-ordonnée (`ul`).\n- Une section **Compétences** utilisant des balises de formatage (`strong`, `em`).\n- Un **lien externe** vers ton profil LinkedIn ou un portfolio.\n- Des **commentaires** pour séparer chaque section du code.\n\n### 2. Exemple de structure attendue\n\nHTML\n\n`<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>CV de Famy Im-dade</title>\n</head>\n<body>\n    <h1>Famy Im-dade</h1>\n    <img src=\"ma-photo.jpg\" alt=\"Photo de profil de Famy\" width=\"150\">\n\n    <section>\n        <h2>Contact</h2>\n        <ul>\n            <li>Email : <a href=\"mailto:test@exemple.com\">Mon Email</a></li>\n            <li>Ville : Paris, France</li>\n        </ul>\n    </section>\n\n    </body>\n</html>`\n\n",
+              "points_module": 15,
+              "quiz": {
+                "question": "Quelle balise est idéale pour lister vos compétences de manière ordonnée ?",
+                "options": [
+                  "<ul>",
+                  "<ol>",
+                  "<p>",
+                  "<a>"
+                ],
+                "reponse_correcte": 1
+              }
+            }
+            ]
+          },
+          {
+              "id": "html-intermediaire",
+              "nom": "Intermédiaire",
+          "badge_nom": "Architecte Confirmé",
+          "points_bonus_fin": 200,
+          "modules": [
+
+           {
+      "id": "html-intermediaire-mod11",
+      "titre": "Le HTML Sémantique",
+     "cours": "\n\nAvant 2014, on utilisait des balises <div> (conteneurs génériques sans aucun sens) pour tout faire. Avec l'arrivée du HTML5, de nouvelles balises \"sémantiques\" sont nées. Elles décrivent précisément leur contenu.\n\n1. Pourquoi la sémantique ?\n- SEO : Google indexe mieux un site sémantique.\n- Accessibilité : Les non-voyants naviguent plus facilement (ils peuvent sauter directement au \"main\" ou au \"nav\").\n- Maintenance : Ton code est beaucoup plus lisible pour d'autres développeurs.\n\n2. Les balises de structure principales\n- <header> : L'en-tête de la page ou d'une section (contient souvent le logo et le menu).\n- <nav> : Contient les liens de navigation principaux.\n- <main> : Le contenu unique et principal de la page (il ne doit y en avoir qu'un seul).\n- <section> : Regroupe des contenus liés par une thématique.\n- <article> : Un contenu autonome qui pourrait être repris sur un autre site (ex : un article de blog, une fiche produit).\n- <aside> : Contenu indirectement lié (ex : barre latérale, publicité, biographie de l'auteur).\n- <footer> : Le pied de page (mentions légales, contact, réseaux sociaux).\n\n3. Article vs Section\nC'est la question que tout le monde se pose !\n- Une <section> est une partie d'un tout (ex : le chapitre d'un livre).\n- Un <article> peut vivre tout seul (ex : si tu le copies-colles sur un autre site, on comprend toujours ce que c'est)."
+,     "points_module": 20,
+     "quiz": {
+           "question": "Quelle balise est la plus appropriée pour envelopper un article de blog autonome ?",
+        "options": [
+          "<section>",
+          "<div>",
+          "<article>",
+          "<aside>"
+                ],
+          "reponse_correcte": 1 
+              }
+},
+  {
+  "id": "html-intermediaire-mod13",
+  "titre": "Les Tableaux complexes",
+  "cours": "### Un tableau accessible et structuré\n\nUn tableau bien construit permet aux outils d'accessibilité (lecteurs d'écran) de lire les données dans le bon ordre et d'associer chaque valeur à son titre.\n\n### 1. La structure de base\n- `<table>` : L'élément parent qui enveloppe tout.\n- `<tr>` (**Table Row**) : Définit une ligne.\n- `<th>` (**Table Header**) : Définit une cellule d'en-tête (gras et centré par défaut).\n- `<td>` (**Table Data**) : Définit une cellule de donnée standard.\n\n### 2. La sémantique avancée\nPour les tableaux complexes, on divise le tableau en trois zones :\n- `<thead>` : Regroupe les lignes d'en-tête.\n- `<tbody>` : Contient le corps des données.\n- `<tfoot>` : Pour les totaux ou conclusions en bas de tableau.\n- `<caption>` : Le titre du tableau (se place juste après `<table>`).\n\n### 3. Fusion de cellules (Niveau Expert)\n- `colspan=\"n\"` : Fusionne des colonnes (horizontalement).\n- `rowspan=\"n\"` : Fusionne des lignes (verticalement).\n\n#### Exemple de code :\n```html\n<table>\n  <caption>Emploi du temps</caption>\n  <thead>\n    <tr>\n      <th>Heure</th>\n      <th>Lundi</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>08h00</td>\n      <td rowspan=\"2\">Cours HTML</td>\n    </tr>\n    <tr>\n      <td>09h00</td>\n    </tr>\n  </tbody>\n</table>\n```",
+  "points_module": 15,
+  "quiz": {
+    "question": "Quel attribut utiliser pour qu'une cellule s'étende sur deux colonnes horizontalement ?",
+    "options": [
+      "rowspan=\"2\"",
+      "colspan=\"2\"",
+      "<scope>",
+      "headers"
+    ],
+    "reponse_correcte": 1
+  }
+},
+{
+  "id": "html-intermediaire-mod14",
+  "titre": "Formulaires (Partie 1) – Structure et entrées de base",
+  "cours": "### Structure et entrées de base\n\nUn formulaire est un espace qui regroupe plusieurs champs de saisie. En HTML, la structure doit être rigoureuse pour que les données soient envoyées correctement.\n\n### 1. La balise parente : `<form>`\nToutes les zones de saisie doivent être enveloppées dans une balise `<form>`. Elle possède deux attributs cruciaux :\n- `action` : L'URL de la page qui va recevoir les données.\n- `method` : La manière d'envoyer les données (généralement `GET` pour une recherche ou `POST` pour des données sensibles comme un mot de passe).\n\n### 2. L'élément de saisie : `<input>`\nC'est la balise la plus polyvalente. Son comportement change selon son attribut `type` :\n- `<input type=\"text\">` : Pour un nom, un pseudo.\n- `<input type=\"password\">` : Masque les caractères saisis.\n- `<input type=\"submit\">` : Crée le bouton d'envoi du formulaire.\n\n### 3. Le lien entre texte et champ : `<label>`\nLe `<label>` sert à donner un nom au champ. Cliquez sur le texte du label place le curseur dans le champ associé.\n- **Lien** : On utilise l'attribut `for` du label qui doit correspondre à l' `id` de l'input.\n\n### 4. L'attribut `name`\nAlors que l' `id` sert au design (CSS), l'attribut `name` est indispensable pour le serveur. C'est le nom de la variable qui contiendra la réponse de l'utilisateur.\n\n#### Exemple de code :\n```html\n<form action=\"/submit\" method=\"POST\">\n  <label for=\"username\">Nom d'utilisateur :</label>\n  <input type=\"text\" id=\"username\" name=\"username\">\n  <input type=\"submit\" value=\"Envoyer\">\n</form>\n```",
+  "points_module": 20,
+  "quiz": {
+    "question": "Quel attribut de l'input est essentiel pour que les données soient envoyées au serveur ?",
+    "options": [
+      "id",
+      "name",
+      "type",
+      "value"
+     ]
+    }
+  },
+  {
+  "id": "html-intermediaire-mod15",
+  "titre": "Formulaires (Partie 2) – Choix et Listes",
+  "cours": "### Choix et Listes\n\nDans ce module, nous allons voir comment permettre à l'utilisateur de choisir parmi plusieurs options, que ce soit un choix unique ou multiple.\n\n### 1. Les Cases à cocher (`checkbox`)\nElles permettent de sélectionner une ou plusieurs options dans une liste.\n- **Usage** : \"Accepter les conditions\", \"Choisir ses centres d'intérêt\".\n- **Lien** : Comme pour le texte, chaque `input` doit avoir un `id` relié à un `label`.\n\n### 2. Les Boutons Radio (`radio`)\nIls permettent de sélectionner une **seule option** parmi un groupe.\n- **Le secret** : Pour que le navigateur comprenne que les boutons font partie du même groupe, ils doivent tous avoir le même attribut `name`.\n\n#### Exemple de code :\n ```html\n<form action=\"/submit\" method=\"POST\">\n  <p>Choisissez votre couleur préférée :</p>\n  <input type=\"checkbox\" id=\"option1\" name=\"color\" value=\"red\">\n  <label for=\"option1\">Rouge</label><br>\n  <input type=\"checkbox\" id=\"option2\" name=\"color\" value=\"blue\">\n  <label for=\"option2\">Bleu</label><br>\n  <input type=\"radio\" id=\"option3\" name=\"color\" value=\"green\">\n  <label for=\"option3\">Vert</label><br>\n  <input type=\"radio\" id=\"option4\" name=\"color\" value=\"yellow\">\n  <label for=\"option4\">Jaune</label><br>\n  <input type=\"submit\" value=\"Envoyer\">\n</form>\n```",
+  "points_module": 20,
+  "quiz": {
+    "question": "Quel type d'input permet de sélectionner une seule option parmi plusieurs ?",
+    "options": [
+      "checkbox",
+      "radio",
+      "text",
+      "password"
+     ]
+    }
+  }, 
+  {
+  "id": "html-intermediaire-mod16",
+  "titre": "Formulaires (Partie 3) – Validation & Nouveaux types",
+  "cours": "### Validation & Nouveaux types\n\nLe HTML5 a introduit des types d'entrées intelligents qui adaptent le clavier sur mobile (clavier numérique pour les nombres, touche \"@\" pour les emails).\n\n### 1. Les types \"Intelligents\"\n- `type=\"email\"` : Vérifie automatiquement la présence d'un \"@\" et d'un point.\n- `type=\"number\"` : N'autorise que les chiffres et ajoute des petites flèches.\n- `type=\"tel\"` : Optimise le clavier sur mobile pour les numéros de téléphone.\n- `type=\"url\"` : Vérifie que le format d'adresse web est correct.\n- `type=\"date\"` : Affiche un calendrier natif pour choisir une date.\n- `type=\"color\"` : Ouvre une palette de couleurs.\n\n### 2. Les attributs de validation\n- `required` : Empêche l'envoi du formulaire si le champ est vide.\n- `min` et `max` : Définit des limites pour les nombres ou les dates.\n- `minlength` et `maxlength` : Contrôle le nombre de caractères (ex: un pseudo entre 3 et 15 caractères).\n- `pattern` : Permet d'utiliser des expressions régulières (Regex) pour des validations ultra-précises.\n\n### 3. L'attribut placeholder vs value\n- **placeholder** : Un texte indicatif gris qui disparaît quand on écrit.\n- **value** : Une vraie valeur déjà inscrite dans le champ par défaut.",
+  "points_module": 20,
+  "quiz": {
+    "question": "Quel type d'input permet de faire apparaître un calendrier natif sur le navigateur ?",
+    "options": [
+      "type=\"text\"",
+      "type=\"calendar\"",
+      "type=\"date\"",
+      "type=\"time\""
+    ],
+    "reponse_correcte": 2
+  }
+}, 
+{
+  "id": "html-intermediaire-mod17",
+  "titre": "Intégration Multimédia (<video> et <audio>)",
+  "cours": "### Intégration Multimédia\n\nCes balises fonctionnent comme des lecteurs intégrés directement dans le navigateur pour enrichir vos pages web.\n\n### 1. La balise `<video>`\nPour afficher une vidéo, on utilise la balise `<video>`. Il est essentiel d'y ajouter des attributs pour qu'elle soit fonctionnelle :\n- `src` : Le chemin vers le fichier (ex: `presentation.mp4`).\n- `controls` : Indispensable pour afficher les boutons Lecture/Pause et le volume.\n- `poster` : Une image qui s'affiche avant que la vidéo ne soit lancée.\n- `autoplay` : Lance la vidéo au chargement (souvent bloqué par les navigateurs si le son n'est pas coupé).\n- `muted` : Coupe le son par défaut.\n\n#### Exemple de code :\n```html\n<video src=\"presentation.mp4\" controls poster=\"preview.jpg\" width=\"600\"></video>\n```\n\n### 2. La balise `<audio>`\nPour intégrer de la musique ou des podcasts, on utilise la balise `<audio>`. Les attributs sont similaires à ceux de la vidéo :\n- `src` : Le chemin vers le fichier audio (ex: `musique.mp3`).\n- `controls` : Affiche les boutons de contrôle (Lecture/Pause, volume).\n- `autoplay` : Lance la lecture dès que possible.\n- `loop` : Relance automatiquement la piste à la fin.\n\n#### Exemple de code :\n```html\n<audio src=\"musique.mp3\" controls autoplay loop></audio>\n```",
+  "points_module": 20,
+  "quiz": {
+    "question": "Quel type d'input permet de faire apparaître un calendrier natif sur le navigateur ?",
+    "options": [
+      "type=\"text\"",
+      "type=\"calendar\"",
+      "type=\"date\"",
+      "type=\"time\""
+    ],
+    "reponse_correcte": 2
+  }
+},
+{
+  "id": "html-intermediaire-mod18",
+  "titre": "Les Iframes (Contenus externes)",
+  "cours": "### Les Iframes (Contenus externes)\n\nL'élément `<iframe>` permet d'incruster un document HTML complet au milieu du tien. C'est comme ouvrir une petite fenêtre sur un autre site web.\n\n### 1. Intégrer une vidéo YouTube\nYouTube ne permet pas d'utiliser sa balise `<video>` directement. Ils fournissent un code d'intégration basé sur une iframe. Pour l'utiliser, cliquez sur \"Partager\" puis \"Intégrer\" sous une vidéo YouTube.\n\n### 2. Intégrer une carte Google Maps\nGoogle Maps génère également une iframe pour afficher une carte interactive. Cela permet à l'utilisateur de zoomer ou de se déplacer sur la carte sans quitter votre site.\n\n### 3. Les attributs essentiels\n- `src` : L'URL de la page à afficher.\n- `width` / `height` : La taille de la fenêtre d'affichage.\n- `loading=\"lazy\"` : Crucial pour la performance ; charge l'iframe uniquement quand l'utilisateur scrolle jusqu'à elle.\n- `allowfullscreen` : Autorise le passage en plein écran (pour les vidéos).\n- `sandbox` : Attribut de sécurité qui restreint les actions du site intégré (empêche les pop-ups ou les scripts malveillants).\n\n### 4. Les limites de sécurité\nCertains sites (Google, Facebook, Amazon) interdisent d'être affichés dans une iframe pour éviter le **Clickjacking**. Dans ce cas, vous verrez une erreur \"Connexion refusée\".",
+  "points_module": 20,
+  "quiz": {
+    "question": "Quel attribut de sécurité permet de restreindre les actions (comme les pop-ups) d'un site affiché dans une iframe ?",
+    "options": [
+      "allowfullscreen",
+      "loading=\"lazy\"",
+      "sandbox",
+      "frameborder"
+    ],
+    "reponse_correcte": 2
+  }
+},
+{
+  "id": "html-intermediaire-mod19",
+  "titre": "Entités HTML & Caractères spéciaux",
+  "cours": "### Entités et Caractères spéciaux\n\nLes entités HTML commencent toujours par une esperluette (`&`) et se terminent par un point-virgule (`;`). Elles permettent d'afficher des caractères réservés ou des symboles.\n\n### 1. Les caractères réservés\nSi vous écrivez `<` dans un paragraphe, le navigateur pense que vous ouvrez une nouvelle balise. Pour l'afficher comme du texte, il faut utiliser :\n- `<` (inférieur) : `&lt;` (pour *less than*)\n- `>` (supérieur) : `&gt;` (pour *greater than*)\n- `&` (esperluette) : `&amp;`\n- `\"` (guillemet double) : `&quot;`\n\n### 2. Les symboles courants\n- `©` (Copyright) : `&copy;`\n- `®` (Registered) : `&reg;`\n- `€` (Euro) : `&euro;`\n- `™` (Trademark) : `&trade;`\n\n### 3. L'espace insécable (`&nbsp;`)\nC'est l'une des entités les plus utilisées. `&nbsp;` (**Non-Breaking Space**) force deux mots à rester sur la même ligne. Très utile pour éviter qu'un symbole \"€\" ou \":\" se retrouve tout seul au début d'une nouvelle ligne.\n\n### 4. Les Emojis\nOn peut copier-coller des emojis directement, mais on peut aussi utiliser leurs codes numériques.\n- Exemple : `&#128512;` donne 😀.",
+  "points_module": 20,
+  "quiz": {
+    "question": "Par quel symbole commence toujours une entité HTML ?",
+    "options": [
+      "Le symbole #",
+      "Le symbole $",
+      "Le symbole &",
+      "Le symbole %"
+    ],
+    "reponse_correcte": 2
+  }
+}, 
+{
+  "id": "html-intermediaire-mod20",
+  "titre": "Introduction au SEO On-Page (OpenGraph & Twitter Cards)",
+  "cours": "### SEO On-Page et Partage Social\n\nQuand vous partagez un lien sur les réseaux sociaux, l'affichage d'une belle image, d'un titre et d'une description n'est pas magique : ce sont des métadonnées spécifiques placées dans le `<head>`.\n\n### 1. Le protocole OpenGraph (`og:`)\nCréé par Facebook, ce protocole est devenu le standard. Il permet de transformer votre page web en un objet riche lors du partage.\n- `og:title` : Le titre qui s'affiche (peut différer du `<title>` de la page).\n- `og:type` : Le type de contenu (ex: `website`, `article`).\n- `og:image` : L'URL de l'image de prévisualisation (crucial pour le taux de clic).\n- `og:url` : L'adresse officielle (canonique) de votre page.\n\n### 2. Les Twitter Cards\nX (anciennement Twitter) possède ses propres balises, même s'il sait lire l'OpenGraph :\n- `twitter:card` : Définit le format (ex: `summary_large_image`).\n- `twitter:site` : Votre pseudo sur le réseau.\n\n#### Exemple de code :\n```html\n<head>\n  <meta property=\"og:title\" content=\"Mon Super Article\">\n  <meta property=\"og:type\" content=\"article\">\n  <meta property=\"og:image\" content=\"https://example.com/image.jpg\">\n  <meta property=\"og:url\" content=\"https://example.com/article\">\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:site\" content=\"@moncompte\">\n</head>\n```",
+  "points_module": 20,
+  "quiz": {
+    "question": "Quel protocole est devenu le standard pour les métadonnées de partage sur les réseaux sociaux ?",
+    "options": [
+      "Twitter Cards",
+      "OpenGraph",
+      "Schema.org",
+      "Microdata"
+    ],
+    "reponse_correcte": 1
+  }
+}
+          ]
+        },
+        {
+          "id": "html-avance",
+          "nom": "Avancé",
+          "badge_nom": "Architecte Expert",
+          "points_bonus_fin": 300,
+          "modules": [
+            {
+  "id": "html-avance-mod21",
+  "titre": "Images responsives (<picture> et srcset)",
+  "cours": "### Optimisation des Images\n\nJusqu'à présent, vous utilisiez l'attribut `src` qui charge la même image pour tous les utilisateurs. C'est un problème de performance : un mobile n'a pas besoin de télécharger une image de 4000px de large.\n\n### 1. L'attribut `srcset` (Le choix du navigateur)\nAu lieu de donner une seule image, on fournit une liste au navigateur avec leurs largeurs réelles (en `w`). Le navigateur calcule alors la densité de l'écran et choisit le fichier le plus léger possible.\n\n#### Exemple de code :\n```html\n<img src=\"photo-400.jpg\"\n     srcset=\"photo-400.jpg 400w, photo-800.jpg 800w, photo-1200.jpg 1200w\"\n     sizes=\"(max-width: 600px) 400px, (max-width: 900px) 800px, 1200px\"\n     alt=\"Une belle photo\">\n```\n\n### 2. La balise `<picture>` (Le choix du développeur)\nElle permet de définir des règles plus complexes que le simple `srcset`. Par exemple, vous pouvez servir une image WebP aux navigateurs qui la supportent et une image JPEG aux autres.\n\n#### Exemple de code :\n```html\n<picture>\n  <source srcset=\"image.webp\" type=\"image/webp\">\n  <source srcset=\"image.jpg\" type=\"image/jpeg\">\n  <img src=\"image.jpg\" alt=\"Image alternative\">\n</picture>\n```",
+  "points_module": 25,
+  "quiz": {
+    "question": "Quel attribut permet au navigateur de choisir automatiquement la meilleure image en fonction de la densité de l'écran ?",
+    "options": [
+      "srcset",
+      "sizes",
+      "src",
+      "alt"
+    ],
+    "reponse_correcte": 0
+  }
+} , 
+{
+  "id": "html-avance-mod22",
+  "titre": "Le SVG en HTML",
+  "cours": "### Un format vectoriel puissant\n\nLe SVG (**Scalable Vector Graphics**) est un \"citoyen de première classe\" en HTML5. Contrairement aux images classiques, il est composé de calculs mathématiques, ce qui lui donne des propriétés uniques.\n\n### 1. Pourquoi utiliser le SVG ?\n- **Poids plume** : Pour des logos ou des icônes, le fichier est souvent bien plus léger qu'un PNG.\n- **Infini** : Aucune pixellisation, peu importe la taille de l'écran (4K, 8K, etc.).\n- **Stylisable** : On peut changer la couleur d'un SVG directement avec du code CSS.\n- **Interactif** : Chaque partie du dessin peut être animée ou répondre à un clic.\n\n### 2. Les deux méthodes d'intégration\n\n#### Méthode 1 : Balise `<img>` (Simple)\n```html\n<img src=\"logo.svg\" alt=\"Logo de l'entreprise\">\n```\n\n#### Méthode 2 : Code SVG inline (Avancé)\n```html\n<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" />\n</svg>\n```\n\n### 3. Accessibilité et SEO\nN'oubliez pas d'ajouter un attribut `title` ou `desc` à votre SVG pour que les lecteurs d'écran puissent le décrire aux utilisateurs malvoyants.",
+  "points_module": 25,
+  "quiz": {
+    "question": "Quel est l'avantage principal du format SVG par rapport aux formats d'images classiques comme PNG ou JPEG ?",
+    "options": [
+      "Il est plus rapide à charger",
+      "Il est composé de calculs mathématiques, ce qui lui permet d'être infini et sans pixellisation",
+      "Il supporte la transparence",
+      "Il est compatible avec tous les navigateurs"
+    ],
+    "reponse_correcte": 1
+  }
+},
+ {
+  "id": "html-avance-mod23",
+  "titre": "Le Canvas (Le dessin scripté)",
+  "cours": "### Le dessin au pixel près\n\nLa balise `<canvas>` ne contient rien par défaut. C'est une surface blanche (un \"canevas\") sur laquelle on peut dessiner dynamiquement au pixel près.\n\n### 1. La balise `<canvas>`\nContrairement à l'image ou au SVG, le Canvas est une image **bitmap** (composée de pixels) générée à la volée. \n\n#### Exemple de code :\n```html\n<canvas id=\"monCanvas\" width=\"400\" height=\"400\"></canvas>\n<script>\n  const canvas = document.getElementById('monCanvas');\n  const ctx = canvas.getContext('2d');\n  ctx.fillStyle = 'blue';\n  ctx.fillRect(50, 50, 100, 100); // Dessine un carré bleu\n</script>\n```\n\n### 2. Utilisations courantes\n- **Jeux vidéo** : De nombreux jeux en ligne utilisent le Canvas pour des graphismes dynamiques.\n- **Visualisations de données** : Graphiques, diagrammes, etc.\n- **Effets visuels** : Particules, animations complexes qui ne sont pas possibles avec du CSS ou du SVG.\n\n### 3. Limitations\n- Le contenu du Canvas n'est pas accessible aux lecteurs d'écran (pas de SEO ni d'accessibilité).\n- Il est plus gourmand en ressources que le SVG pour les formes simples.",
+  "points_module": 25,
+  "quiz": {
+    "question": "Quelle est la principale différence entre le SVG et le Canvas ?",
+    "options": [
+      "Le SVG est un format vectoriel, tandis que le Canvas est un format bitmap",
+      "Le SVG est plus rapide à charger que le Canvas",
+      "Le Canvas est plus accessible aux lecteurs d'écran que le SVG",
+      "Le SVG est plus gourmand en ressources que le Canvas"
+    ],
+    "reponse_correcte": 0
+  }
+}, 
+{
+  "id": "html-avance-mod24",
+  "titre": "Accessibilité (A11Y) – Rôles ARIA et Navigation Clavier",
+  "cours": "### L'Accessibilité Web\n\nL'accessibilité consiste à s'assurer que le contenu HTML est compréhensible par tous, y compris par les technologies d'assistance comme les lecteurs d'écran (NVDA, VoiceOver).\n\n### 1. La Navigation au Clavier\nBeaucoup d'utilisateurs naviguent uniquement avec la touche **Tab**. \n- **Ordre de tabulation** : Le navigateur suit l'ordre des balises dans votre code HTML.\n- **Focus** : Il est interdit de supprimer le contour (`outline`) visuel des liens sans le remplacer par un autre indicateur.\n- **Attribut tabindex** : Permet de rendre un élément normalement non cliquable (comme une `div`) sélectionnable au clavier avec `tabindex=\"0\"`.\n\n### 2. Les Rôles ARIA (Accessible Rich Internet Applications)\nQuand le HTML sémantique ne suffit pas, on utilise les attributs `aria-*` :\n- `role=\"\"` : Indique la fonction de l'élément (ex: `role=\"button\"`, `role=\"alert\"`).\n- `aria-label` : Donne un nom invisible à l'écran mais lu par le lecteur d'écran (très utile pour une icône seule).\n- `aria-hidden=\"true\"` : Cache un élément purement décoratif pour ne pas polluer la lecture vocale.\n\n### 3. Le masquage \"Visually Hidden\"\nParfois, on veut qu'un texte soit lu par un robot mais invisible à l'œil nu. On utilise alors une classe CSS spécifique plutôt que `display: none`, car ce dernier cache le texte à tout le monde, y compris aux outils d'assistance.",
+  "points_module": 25,
+  "quiz": {
+    "question": "Quel attribut ARIA permet de donner un nom descriptif à un bouton qui ne contient qu'une icône visuelle ?",
+    "options": [
+      "role=\"icon\"",
+      "aria-hidden=\"false\"",
+      "aria-label=\"...\"",
+      "tabindex=\"1\""
+    ],
+    "reponse_correcte": 2
+  }
+},
+{
+  "id": "html-avance-mod25",
+  "titre": "Microdonnées et Schema.org",
+  "cours": "### Le Web Sémantique et Structuré\n\nLe HTML classique dit : \"Ceci est un texte en gras\". Les microdonnées disent : \"Ceci est le prix d'un produit\" ou \"Ceci est la note moyenne d'une recette\".\n\n### 1. Qu'est-ce que Schema.org ?\nC'est un dictionnaire universel créé par Google, Yahoo et Bing pour standardiser la façon dont on décrit les données sur le web.\n\n### 2. Les Rich Snippets (Extraits enrichis)\nGrâce aux microdonnées, Google peut afficher des informations supplémentaires directement dans ses résultats de recherche :\n- Des **étoiles de notation** (avis clients).\n- Le **temps de cuisson** d'une recette.\n- Le **prix** et la disponibilité d'un article.\n\n### 3. La syntaxe Microdata\nOn utilise des attributs spéciaux directement dans les balises HTML :\n- `itemscope` : Indique que la balise contient un objet spécifique.\n- `itemtype` : Définit le type d'objet (ex: `https://schema.org/Product`).\n- `itemprop` : Définit la propriété (ex: `name`, `brand`, `price`).\n\n#### Exemple de code :\n```html\n<div itemscope itemtype=\"https://schema.org/Product\">\n  <h2 itemprop=\"name\">Chaise en bois</h2>\n  <p>Marque : <span itemprop=\"brand\">MeublesRUs</span></p>\n  <p>Prix : <span itemprop=\"price\">49.99</span> €</p>\n</div>\n```",
+  "points_module": 25,
+  "quiz": {
+    "question": "Quel attribut Microdata indique que la balise contient un objet spécifique ?",
+    "options": [
+      "itemscope",
+      "itemtype",
+      "itemprop",
+      "itemid"
+    ],
+    "reponse_correcte": 0
+  }
+} ,
+{
+  "id": "html-avance-mod26",
+  "titre": "Web Components – Templates & Slots",
+  "cours": "### L'isolation et la réutilisation\n\nNormalement, le HTML est \"global\" : un style CSS peut affecter toute la page. Les Web Components permettent de créer une capsule étanche autour de votre code pour éviter les conflits.\n\n### 1. La balise `<template>`\nC'est un fragment de HTML stocké dans la page mais **non affiché** au chargement. Le navigateur l'ignore jusqu'à ce que vous lui demandiez de le \"cloner\" avec JavaScript. C'est parfait pour créer des structures répétitives comme des cartes de produits.\n\n### 2. Le Shadow DOM\nC'est le concept de \"capsule\". Le code à l'intérieur d'un Web Component est caché dans une ombre (Shadow). Le CSS de la page principale ne peut pas entrer dedans, et le CSS du composant ne peut pas en sortir. C'est l'isolation parfaite.\n\n### 3. Les `<slot>` (Les emplacements)\nUn \"slot\" est un trou vide dans votre template que l'utilisateur peut remplir avec son propre texte ou ses propres balises.\n\n#### Exemple de code :\n```html\n<template id=\"carte-produit\">\n  <style>\n    .carte { border: 1px solid #ccc; padding: 10px; }\n    .carte h2 { color: blue; }\n  </style>\n  <div class=\"carte\">\n    <h2><slot name=\"titre\">Titre par défaut</slot></h2>\n    <p><slot name=\"description\">Description par défaut</slot></p>\n  </div>\n</template>\n```\n\n### 4. Création d'un Web Component\n```javascript\nclass CarteProduit extends HTMLElement {\n  constructor() {\n    super();\n    const template = document.getElementById('carte-produit').content;\n    const shadowRoot = this.attachShadow({ mode: 'open' }).appendChild(template.cloneNode(true));\n  }\n}\ncustomElements.define('carte-produit', CarteProduit);\n```\n```html\n<carte-produit>\n  <span slot=\"titre\">Chaise en bois</span>\n  <span slot=\"description\">Une chaise confortable et élégante.</span>\n</carte-produit>\n```",
+  "points_module": 25,
+  "quiz": {
+    "question": "Quel élément HTML permet de stocker un fragment de code qui n'est pas affiché au chargement de la page, mais qui peut être cloné et utilisé avec JavaScript ?",
+    "options": [
+      "<template>",
+      "<slot>",
+      "<shadow>",
+      "<component>"
+    ],
+    "reponse_correcte": 0
+  
+}
+}, 
+{
+  "id": "html-avance-mod27",
+  "titre": "Stockage local (localStorage et sessionStorage)",
+  "cours": "### Le Web Storage\n\nC'est grâce à ces technologies que votre thème sombre (Dark Mode) reste activé quand vous revenez sur un site, ou que votre panier d'achat ne se vide pas si vous fermez l'onglet par erreur.\n\n### 1. Qu'est-ce que le Web Storage ?\nC'est un espace de stockage (environ 5 Mo) lié à votre domaine (ex: monsite.com). Contrairement aux anciens Cookies, ces données ne sont pas envoyées au serveur à chaque clic, ce qui rend le site plus rapide.\n\n### 2. Local vs Session : Le match\n- **localStorage** : La donnée est stockée indéfiniment. Elle survit à la fermeture de l'onglet, du navigateur et même au redémarrage de l'ordinateur. Elle ne disparaît que si le code ou l'utilisateur la supprime.\n- **sessionStorage** : La donnée est temporaire. Elle est supprimée dès que l'onglet ou la fenêtre du navigateur est fermé.\n\n### 3. Cas d'utilisation\n- Enregistrer le score d'un mini-jeu HTML5.\n- Mémoriser les préférences d'affichage (langue, mode nuit).\n- Sauvegarder un brouillon de formulaire pour éviter de tout perdre en cas de coupure internet.\n\n### 4. Sécurité importante\nIl ne faut jamais stocker de données sensibles (mots de passe, numéros de carte bancaire) dans le Web Storage. N'importe quel script malveillant présent sur la page pourrait y accéder facilement.\n\n#### Exemple de code :\n```javascript\n// Enregistrer une donnée\nlocalStorage.setItem(\"theme\", \"dark\");\n\n// Lire une donnée\nconst currentTheme = localStorage.getItem(\"theme\");\n\n// Supprimer une donnée\nlocalStorage.removeItem(\"theme\");\n```",
+  "points_module": 25,
+  "quiz": {
+    "question": "Quelle est la différence majeure entre localStorage et sessionStorage ?",
+    "options": [
+      "sessionStorage permet de stocker des fichiers plus lourds",
+      "localStorage survit à la fermeture du navigateur contrairement au sessionStorage",
+      "sessionStorage est automatiquement envoyé au serveur",
+      "Il n'y a aucune différence, ce sont deux noms pour la même chose"
+    ],
+    "reponse_correcte": 1
+  }
+},
+{
+  "id": "html-avance-mod28",
+  "titre": "Performance – Chargement différé et préchargement",
+  "cours": "### Optimisation des performances\n\nLe but est simple : ne charger que ce qui est nécessaire au moment où c'est nécessaire pour rendre le site ultra-rapide.\n\n### 1. Le Lazy Loading (Chargement différé)\nPar défaut, le navigateur tente de télécharger toutes les images d'une page, même celles invisibles en bas de l'écran.\n- **Attribut** : `loading=\"lazy\"`.\n- **Effet** : L'image n'est téléchargée que lorsque l'utilisateur s'en approche en scrollant.\n- **Gain** : Économie de données et chargement initial instantané.\n\n### 2. Le Préchargement (Preload)\nSi vous savez que l'utilisateur aura besoin d'un fichier très vite (comme une police d'écriture), demandez au navigateur de le télécharger en priorité haute dans le `<head>` :\n`<link rel=\"preload\" href=\"font.woff2\" as=\"font\">`.\n\n### 3. DNS Prefetch & Preconnect\nSi votre site utilise des services externes (Google Fonts, scripts), vous pouvez gagner des millisecondes en connectant le navigateur à l'avance :\n`<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">`.\n\n### 4. L'attribut async et defer pour les scripts\nCes attributs se placent sur la balise `<script>` pour ne pas bloquer l'affichage du texte :\n- **async** : Télécharge et exécute dès que prêt (interrompt la lecture du HTML).\n- **defer** : Télécharge en parallèle mais attend que tout le HTML soit lu avant de s'exécuter. **C'est le plus recommandé**.",
+  "points_module": 25,
+  "quiz": {
+    "question": "Quel attribut permet de ne charger une image que lorsqu'elle devient visible à l'écran ?",
+    "options": [
+      "async",
+      "defer",
+      "loading=\"lazy\"",
+      "rel=\"preload\""
+    ],
+    "reponse_correcte": 2
+  }
+},
+{
+  "id": "html-avance-mod29",
+  "titre": "HTML & JavaScript – Les attributs data-* et le DOM",
+  "cours": "### L'interaction entre Structure et Logique\n\nLe DOM (**Document Object Model**) est la représentation hiérarchique que le navigateur se fait de votre code HTML pour pouvoir le manipuler dynamiquement via des scripts.\n\n### 1. Les attributs personnalisés `data-*`\nC'est l'une des fonctionnalités les plus puissantes du HTML5. Vous pouvez créer vos propres attributs pour stocker des informations invisibles à l'utilisateur, mais accessibles par le JavaScript.\n- **Syntaxe** : Toujours commencer par `data-` suivi du nom de votre choix (en minuscules).\n- **Exemple** : `<div id=\"joueur\" data-points=\"1500\" data-niveau=\"expert\">...</div>`.\n- **Avantage** : Cela permet de séparer proprement les données (HTML) du comportement (JS).\n\n### 2. Lier le JavaScript proprement\nOn évite aujourd'hui les anciens attributs comme `onclick=\"\"` directement dans les balises.\n- **Mauvais** : `<button onclick=\"alert('Hello')\">` (mélange de logique et structure).\n- **Bon** : Utiliser un `id` ou une `class`, puis attacher un \"écouteur d'événement\" (EventListener) dans un fichier JS séparé.\n\n### 3. Manipulation du DOM : Les sélecteurs\nEn HTML, on prépare des points d'accroche pour que le script puisse \"attraper\" les éléments :\n- `document.getElementById('id')` : La méthode la plus rapide pour cibler un élément unique.\n- `document.querySelector('.ma-classe')` : La méthode la plus flexible utilisant la syntaxe des sélecteurs CSS.\n\n### 4. Le contenu dynamique\nLes balises `<span>` ou `<div>` servent souvent de réceptacles vides. Le JavaScript vient y injecter du texte ou du HTML (via `innerText` ou `innerHTML`) pour afficher des résultats de calculs ou des notifications en temps réel.",
+  "points_module": 25,
+  "quiz": {
+    "question": "Par quel préfixe doit obligatoirement commencer un attribut de donnée personnalisé pour être valide en HTML5 ?",
+    "options": [
+      "custom-",
+      "js-",
+      "data-",
+      "info-"
+    ],
+    "reponse_correcte": 2
+  }
+}, 
+{
+  "id": "html-avance-mod30",
+  "titre": "Déploiement & Qualité (W3C Validator)",
+  "cours": "### L'Excellence du Code\n\nÉcrire du code qui \"marche\" est une chose, écrire du code conforme aux standards internationaux en est une autre. C'est ce qui sépare l'amateur du professionnel.\n\n### 1. La Validation W3C\nLe **W3C** (World Wide Web Consortium) est l'organisme qui définit les règles du HTML. Ils proposent un validateur gratuit pour traquer les erreurs invisibles :\n- **Le but** : Détecter les balises mal fermées, les attributs obligatoires oubliés ou les erreurs de structure.\n- **L'objectif** : Obtenir le message vert : \"Document checking completed. No errors or warnings to show.\"\n\n### 2. La Checklist de Qualité Finale\nAvant de mettre un site en ligne, vérifiez toujours :\n- **Sémantique** : Utilisation de `<main>`, `<article>`, `<nav>`, etc.\n- **Accessibilité** : Attributs `alt` sur toutes les images et bons contrastes.\n- **Performance** : `loading=\"lazy\"` pour les images et `defer` pour les scripts.\n- **SEO** : Présence des balises `title`, `meta description` et `OpenGraph`.\n\n### 3. Le Déploiement\nUne fois votre fichier `index.html` prêt, il faut le rendre public via des solutions d'hébergement :\n- **Plateformes modernes** : GitHub Pages, Vercel ou Netlify permettent d'héberger un site gratuitement en quelques clics.\n- **Hébergement classique** : Utilisation du protocole **FTP** (via FileZilla) pour envoyer les fichiers sur le serveur.",
+  "points_module": 30,
+  "quiz": {
+    "question": "Que signifie l'acronyme W3C ?",
+    "options": [
+      "World Wide Web Center",
+      "World Wide Web Consortium",
+      "Web 3.0 Corporation",
+      "World Wide Web Community"
+    ],
+    "reponse_correcte": 1
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]
+    
+  }
+      ]
+    }
+  ]
+}
+
+
+
+ 

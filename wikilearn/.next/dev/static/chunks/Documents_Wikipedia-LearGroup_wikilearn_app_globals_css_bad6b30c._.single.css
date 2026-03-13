@@ -1,0 +1,133 @@
+/* [project]/Documents/Wikipedia-LearGroup/wikilearn/app/globals.css [app-client] (css) */
+body {
+  background: #f3eaea;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.courses, .lesson-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  padding: 24px;
+  display: flex;
+}
+
+.card, .lesson-card {
+  border-radius: 16px;
+  width: 220px;
+  box-shadow: 0 6px 14px #00000026;
+}
+
+.card {
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card img {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+}
+
+.html-page {
+  background: #f3eaea;
+  min-height: 100vh;
+}
+
+.course-header__top {
+  background: #efefef;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  display: flex;
+}
+
+.course-header__menu, .course-header__search {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 28px;
+}
+
+.course-header__logo {
+  margin: 0;
+  font-size: 28px;
+}
+
+.course-header__title-box {
+  text-align: center;
+  background: #f7f0f0;
+  border-radius: 14px;
+  width: 160px;
+  margin: 14px 18px 10px;
+  padding: 10px 16px;
+}
+
+.course-header__title-box h2 {
+  margin: 0;
+}
+
+.course-header__subtitle {
+  text-align: center;
+  background: #f4d7c5;
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.lesson-card {
+  background: #d96a2b;
+  padding: 14px;
+}
+
+.lesson-card img {
+  object-fit: cover;
+  border-radius: 14px;
+  width: 100%;
+  height: 120px;
+}
+
+.lesson-card__content {
+  margin-top: 10px;
+}
+
+.lesson-card__text {
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  display: flex;
+}
+
+.lesson-card__text p {
+  margin: 0;
+}
+
+.lesson-card__text span {
+  white-space: nowrap;
+}
+
+.lesson-card__button {
+  color: #fff;
+  cursor: pointer;
+  background: #2f2f2f;
+  border: none;
+  border-radius: 999px;
+  width: 100%;
+  padding: 10px 12px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=Documents_Wikipedia-LearGroup_wikilearn_app_globals_css_bad6b30c._.single.css.map*/

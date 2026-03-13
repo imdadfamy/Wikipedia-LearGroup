@@ -1,0 +1,51 @@
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/_app": [
+      "static/chunks/b826f_next_dist_compiled_7b5df3d1._.js",
+      "static/chunks/b826f_next_dist_shared_lib_048e3bfa._.js",
+      "static/chunks/b826f_next_dist_client_9e3f87e7._.js",
+      "static/chunks/b826f_next_dist_05165172._.js",
+      "static/chunks/b826f_next_app_71e0c33b.js",
+      "static/chunks/[next]_entry_page-loader_ts_69e6a10b._.js",
+      "static/chunks/b826f_react-dom_78a6816c._.js",
+      "static/chunks/b826f_3cbf9d05._.js",
+      "static/chunks/[root-of-the-server]__2026b28f._.js",
+      "static/chunks/Documents_Wikipedia-LearGroup_wikilearn_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-Documents_Wikipedia-LearGroup_wikilearn_pages__app_5cf55aef._.js"
+    ],
+    "/_error": [
+      "static/chunks/b826f_next_dist_compiled_7b5df3d1._.js",
+      "static/chunks/b826f_next_dist_shared_lib_c69b81b3._.js",
+      "static/chunks/b826f_next_dist_client_9e3f87e7._.js",
+      "static/chunks/b826f_next_dist_3f5c83d9._.js",
+      "static/chunks/b826f_next_error_0bebaef1.js",
+      "static/chunks/[next]_entry_page-loader_ts_2c76cec9._.js",
+      "static/chunks/b826f_react-dom_78a6816c._.js",
+      "static/chunks/b826f_3cbf9d05._.js",
+      "static/chunks/[root-of-the-server]__09dee2c6._.js",
+      "static/chunks/Documents_Wikipedia-LearGroup_wikilearn_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-Documents_Wikipedia-LearGroup_wikilearn_pages__error_7ef71bcc._.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/b826f_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_7844d720._.js",
+    "static/chunks/b826f_next_dist_compiled_react-dom_7159f4c7._.js",
+    "static/chunks/b826f_next_dist_compiled_react-server-dom-turbopack_bbaba6ff._.js",
+    "static/chunks/b826f_next_dist_compiled_next-devtools_index_31404837.js",
+    "static/chunks/b826f_next_dist_compiled_af1a9bfe._.js",
+    "static/chunks/b826f_next_dist_client_395fa4c8._.js",
+    "static/chunks/b826f_next_dist_93fc1034._.js",
+    "static/chunks/b826f_@swc_helpers_cjs_af72a04c._.js",
+    "static/chunks/Documents_Wikipedia-LearGroup_wikilearn_a0ff3932._.js",
+    "static/chunks/turbopack-Documents_Wikipedia-LearGroup_wikilearn_a00a0f76._.js"
+  ]
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js"
+];

@@ -1,0 +1,373 @@
+/* [project]/Documents/Wikipedia-LearGroup/wikilearn/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5eded;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  background: #eaeaea;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  display: flex;
+}
+
+.brand-wrapper {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.brand-logo {
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.brand {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.icon-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 24px;
+}
+
+.topbar-spacer {
+  width: 24px;
+}
+
+.home-page {
+  min-height: 100vh;
+}
+
+.search-section {
+  justify-content: center;
+  margin: 20px;
+  display: flex;
+}
+
+.search-input {
+  border: 1px solid #000;
+  border-radius: 30px;
+  width: 350px;
+  padding: 12px;
+}
+
+.home-cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.course-card {
+  text-align: center;
+  color: #000;
+  border-radius: 15px;
+  width: 220px;
+  min-height: 250px;
+  padding: 20px;
+  text-decoration: none;
+  transition: transform .2s;
+  display: block;
+  box-shadow: 0 5px 10px #0003;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card__image {
+  width: 130px;
+  height: auto;
+}
+
+.course-card__title {
+  margin-top: 20px;
+}
+
+.course-card--html {
+  background: orange;
+}
+
+.course-card--css {
+  background: #1e5eff;
+}
+
+.course-card--js {
+  background: #ffd800;
+}
+
+.html-course-page {
+  min-height: 100vh;
+}
+
+.course-hero {
+  margin: 20px;
+}
+
+.course-pill {
+  text-align: center;
+  background: #f1f1f1;
+  border-radius: 20px;
+  width: 120px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.course-banner {
+  text-align: center;
+  background: #f2d3bf;
+  margin-top: 10px;
+  padding: 12px;
+}
+
+.lesson-grid {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.lesson-card {
+  text-align: center;
+  border-radius: 15px;
+  width: 220px;
+  padding: 15px;
+}
+
+.lesson-card__image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.lesson-card__meta {
+  margin: 12px 0;
+}
+
+.lesson-card__name {
+  margin: 0 0 6px;
+  font-weight: bold;
+}
+
+.lesson-card__level {
+  font-size: 14px;
+}
+
+.lesson-card__button {
+  color: #fff;
+  cursor: pointer;
+  background: #333;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lesson-card__button:hover {
+  background: #000;
+}
+
+.html-card {
+  background: orange;
+}
+
+.css-card {
+  background: #1e5eff;
+}
+
+.js-card {
+  background: #ffd800;
+}
+
+.lesson-start-page {
+  background: #f5eded;
+  min-height: 100vh;
+}
+
+.lesson-start-header {
+  background: #ececec;
+  width: 100%;
+  height: 60px;
+}
+
+.lesson-start-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 20px;
+  display: flex;
+}
+
+.lesson-start-image {
+  border-radius: 16px;
+  width: 100%;
+  max-width: 360px;
+  display: block;
+}
+
+.lesson-start-button {
+  color: #fff;
+  cursor: pointer;
+  background: #2f49e6;
+  border: none;
+  border-radius: 14px;
+  min-width: 130px;
+  padding: 14px 34px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 6px 12px #00000026;
+}
+
+.quiz-page {
+  background: #736f6f;
+  min-height: 100vh;
+}
+
+.quiz-topbar {
+  background: #efefef;
+  padding: 24px 36px;
+}
+
+.quiz-header {
+  background: #d9d9d9;
+  padding: 18px 22px;
+}
+
+.quiz-header__row {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-weight: 700;
+  display: flex;
+}
+
+.progress-bar {
+  background: #f0ddda;
+  border-radius: 999px;
+  width: 100%;
+  height: 22px;
+  overflow: hidden;
+}
+
+.progress-bar__fill {
+  background: #d8744f;
+  height: 100%;
+  transition: width .3s;
+}
+
+.quiz-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  padding: 70px 20px;
+  display: flex;
+}
+
+.question-box {
+  color: #fff;
+  text-align: center;
+  background: #0f58b8;
+  border-radius: 10px;
+  max-width: 520px;
+  padding: 14px 22px;
+  font-size: .95rem;
+}
+
+.answers-list {
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+}
+
+.answer-button {
+  text-align: left;
+  cursor: pointer;
+  background: #f7efef;
+  border: 1px solid #222;
+  border-radius: 999px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 1rem;
+  display: flex;
+}
+
+.answer-button--selected {
+  outline: 3px solid #0f58b8;
+}
+
+.answer-circle {
+  border: 1px solid #111;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.quiz-feedback {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.next-button {
+  color: #fff;
+  cursor: pointer;
+  background: #0f58b8;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.quiz-result {
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.lesson-start-button {
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background: #2f49e6;
+  border: none;
+  border-radius: 14px;
+  min-width: 130px;
+  padding: 14px 34px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 6px 12px #00000026;
+}
+
+.timer-box {
+  text-align: center;
+  color: #111;
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=Documents_Wikipedia-LearGroup_wikilearn_app_globals_471fd89d.css.map*/
